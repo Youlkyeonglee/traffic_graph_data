@@ -19,6 +19,12 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 Input Video → Vehicle Detection → Lane Assignment → Behavior Classification → Graph Data
 ```
 
+## Download Links
+
+### Dataset Files
+- [json_data (Google Drive)](https://drive.google.com/drive/folders/1F3xJZBhCIh1NUgzfxI0JdAk0mppb1Twk?usp=sharing) - 차량 검출 데이터
+- [video_data (Google Drive)](https://drive.google.com/drive/folders/1eNYsHGSMzCBMo162OBR4L1EE2EC8bsgE?usp=sharing) - 원본 비디오 데이터
+
 ## Folder Structure
 
 ```
