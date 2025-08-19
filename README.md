@@ -15,16 +15,12 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 
 ## Ulsan Gongeoptap Digital Twin Project
 
-## Digital Twin Visualization
+| Digital Twin Visualization |
+|:-------------------------:|
+| [![Digital Twin](https://img.youtube.com/vi/ybO6N5v70Mc/0.jpg)](https://www.youtube.com/watch?v=ybO6N5v70Mc) |
+| *Left: Real video clip / Right: Digital Twin* |
 
-<a href="https://www.youtube.com/watch?v=ybO6N5v70Mc">
-  <img src="https://img.youtube.com/vi/ybO6N5v70Mc/0.jpg" width="800" height="600">
-</a>
-
-*Left: Real video clip / Right: Digital Twin*
-
-
-### Processing Pipeline Overview
+## Processing Pipeline Overview
 ```
 Input Video → Vehicle Detection → Lane Assignment → Behavior Classification → Graph Data
 ```
