@@ -1,4 +1,4 @@
-# Vehicle Driving Behavior Analysis Dataset
+# Vehicle Behavior Classification Dataset
 
 This repository contains a comprehensive dataset and processing pipeline for analyzing vehicle driving behaviors from video data. The dataset includes lane annotations, vehicle detection results, and driving behavior classifications for research purposes.
 
