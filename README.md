@@ -263,10 +263,10 @@ Enhanced data with behavior classifications and lane assignments:
 - `category`: Behavior classification ("stop", "lane_change", "normal_driving")
 - `lane_id`: Assigned lane identifier
 
-### Graph Neural Network Data
+## Graph Neural Network Data
 
 | **Feature Type** | **Dimension** | **Attributes** |
-|:---|:---:|:---|
+|:---:|:---:|:---|
 | Node $\(\mathcal{V}\)$ | 9 | cx, cy, w, h, speed, dx, dy, dz, acceleration |
 | Edge $\(\mathcal{E}\)$ | 5 | cx, cy, w, h, speed |
 | Edge $\(\mathcal{E}\)$ | 6 | cx, cy, w, h, speed, acceleration |
