@@ -8,8 +8,6 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 
 ## Visual Examples
 
-### Visual Examples
-
 | Lane Annotations | Vehicle Behavior Visualization |
 |:-----------------:|:-------------------------------:|
 | <img src="lane_annotations_result.jpg" width="400" height="300"> | <a href="https://www.youtube.com/watch?v=ZOX_vPBZQx4"><img src="https://img.youtube.com/vi/ZOX_vPBZQx4/0.jpg" width="400" height="300"></a> |
@@ -305,11 +303,11 @@ The dataset includes:
 
 If you use this dataset in your research, please cite:
 ```
-@dataset{vehicle_driving_behavior_2025,
-  title={Vehicle Driving Behavior Analysis Dataset},
-  author={Your Name},
-  year={2025},
-  url={https://github.com/youlkyeonglee/tii_graph_data}
+@dataset{comming soon,
+  title={comming soon},
+  author={comming soon},
+  year={comming soon},
+  url={comming soon}
 }
 ```
 
