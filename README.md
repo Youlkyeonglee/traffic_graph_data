@@ -8,22 +8,11 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 
 ## Visual Examples
 
-### Lane Annotations
-![Lane Annotations](lane_annotations_result.jpg)
+### Visual Examples
 
-*Interactive lane annotation tool showing road lanes, centerlines, and exclusion zones*
-
-### Vehicle Behavior Visualization
-<!-- [![Vehicle Behavior Visualization](https://youtu.be/ZOX_vPBZQx4)] -->
-<!-- <video width="500" height="300" controls>
-  <source src="https://youtu.be/ZOX_vPBZQx4" type="video/">
-  Your browser does not support the video tag.
-</video> -->
-*Annotated video showing vehicle trajectories, behavior classifications, and lane information*
-
-**Video Files:**
-
-[![Video](https://img.youtube.com/vi/ZOX_vPBZQx4/0.jpg)](https://www.youtube.com/watch?v=ZOX_vPBZQx4)
+| Lane Annotations | Vehicle Behavior Visualization |
+|-----------------|-------------------------------|
+| ![Lane Annotations](lane_annotations_result.jpg) *Interactive lane annotation tool showing road lanes, centerlines, and exclusion zones* | [![Video](https://img.youtube.com/vi/ZOX_vPBZQx4/0.jpg)](https://www.youtube.com/watch?v=ZOX_vPBZQx4) *Annotated video showing vehicle trajectories, behavior classifications, and lane information* |
 ### Processing Pipeline Overview
 ```
 Input Video → Vehicle Detection → Lane Assignment → Behavior Classification → Graph Data
