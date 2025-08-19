@@ -263,14 +263,64 @@ Enhanced data with behavior classifications and lane assignments:
 - `category`: Behavior classification ("stop", "lane_change", "normal_driving")
 - `lane_id`: Assigned lane identifier
 
-## Dataset Statistics
+### Graph Neural Network Data
 
-The dataset includes:
-- **Vehicle trajectories**: Position, speed, acceleration data
-- **Lane information**: Lane boundaries and centerlines
-- **Behavior labels**: stop, lane_change, normal_driving
-- **Graph features**: Node features (9D), Edge features (5-10D)
-- **Multiple configurations**: 4-7 neighbors, 5-10 edge dimensions
+| **Feature Type** | **Dimension** | **Attributes** |
+|:---|:---:|:---|
+| Node \(\mathcal{V}\) | 9 | cx, cy, w, h, speed, dx, dy, dz, acceleration |
+| Edge \(\mathcal{E}\) | 5 | cx, cy, w, h, speed |
+| Edge \(\mathcal{E}\) | 6 | cx, cy, w, h, speed, acceleration |
+| Edge \(\mathcal{E}\) | 7 | cx, cy, w, h, speed, acceleration, $\mathcal{D}$ |
+| Edge \(\mathcal{E}\) | 10 | cx, cy, w, h, speed, dx, dy, dz, acceleration, $\mathcal{D}$ |
+| Node \(\mathcal{V}\) | 8 | wx, wy, wz, speed, dx, dy, dz, acceleration |
+| Edge \(\mathcal{E}\) | 4 | wx, wy, wz, speed |
+| Edge \(\mathcal{E}\) | 5 | wx, wy, wz, speed, acceleration |
+| Edge \(\mathcal{E}\) | 6 | wx, wy, wz, speed, acceleration, $\mathcal{D}$ |
+| Edge \(\mathcal{E}\) | 9 | wx, wy, wz, speed, dx, dy, dz, acceleration, $\mathcal{D}$ |
+
+#### Image Coordinates Graph Data (4_graph_data/)
+PyTorch Geometric graph data using image coordinates:
+
+**File Naming Convention:**
+- `combined_vehicle_data_{neighbors}_{edges}.pkl`
+- Example: `combined_vehicle_data_6_7.pkl` (6 neighbors, 7 edge features)
+
+**Dataset Statistics:**
+- **Total Nodes**: 996,122
+- **Total Edges**: 3,978,137
+- **Node Features**: 9-dimensional
+- **Edge Features**: 5,6,7,10 dimensional
+- **Neighbor Configurations**: 4,5,6,7 neighbor vehicles
+
+**Behavior Distribution:**
+- Stop: 401,549 samples (40.31%)
+- Lane Change: 205,212 samples (20.60%)
+- Normal Driving: 389,361 samples (39.09%)
+
+
+#### World Coordinates Graph Data (4_world_graph_data/)
+PyTorch Geometric graph data using world coordinates:
+
+**File Naming Convention:**
+- `combined_vehicle_data_{neighbors}_{edges}.pkl`
+- Example: `combined_vehicle_data_7_9.pkl` (7 neighbors, 9 edge features)
+
+**Dataset Statistics:**
+- **Total Nodes**: 996,122
+- **Total Edges**: 3,978,137
+- **Node Features**: 9-dimensional
+- **Edge Features**: 4,5,6,9 dimensional
+- **Neighbor Configurations**: 4,5,6,7 neighbor vehicles
+
+**Behavior Distribution:**
+- Stop: 401,549 samples (40.31%)
+- Lane Change: 205,212 samples (20.60%)
+- Normal Driving: 389,361 samples (39.09%)
+
+**Key Differences:**
+- **Image Coordinates**: Smaller dataset, normalized coordinates (0-1), suitable for CNN-GNN hybrid models
+- **World Coordinates**: Larger dataset, real-world coordinates, suitable for pure GNN models
+
 
 ## Output Files
 
