@@ -22,7 +22,7 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 <tr>
   <td align="center">
     <a href="https://www.youtube.com/watch?v=ybO6N5v70Mc">
-      <img src="https://img.youtube.com/vi/ybO6N5v70Mc/0.jpg" width="500" height="300">
+      <img src="https://img.youtube.com/vi/ybO6N5v70Mc/0.jpg" width="600" height="480">
     </a>
   </td>
 </tr>
