@@ -22,6 +22,7 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 *Annotated video showing vehicle trajectories, behavior classifications, and lane information*
 
 **Video Files:**
+
 [![Video](https://img.youtube.com/vi/ZOX_vPBZQx4/0.jpg)](https://www.youtube.com/watch?v=ZOX_vPBZQx4)
 ### Processing Pipeline Overview
 ```
@@ -118,10 +119,10 @@ uv run python 4_visualization_filtered.py --video ./video_data/video.avi --json 
 uv run python 5_convert_relative_image_graphdata.py
 ```
 
-### 6. Graph Data Conversion - World Coordinates (`6_convert_relative_world_graphdata.py`)
+### 6. Graph Data Conversion - World Coordinates (`5_convert_relative_world_graphdata.py`)
 **Purpose**: Converts vehicle data to graph format using world coordinates
 **Input**: Behavior classified data with world coordinates
-**Output**: PyTorch Geometric data files in `5_world_graph_data/`
+**Output**: PyTorch Geometric data files in `4_world_graph_data/`
 **Usage**:
 ```bash
 uv run python 6_convert_relative_world_graphdata.py
@@ -197,11 +198,76 @@ uv run python 4_visualization_filtered.py
 uv run python 5_convert_relative_image_graphdata.py
 
 # For world coordinates
-uv run python 6_convert_relative_world_graphdata.py
+uv run python 5_convert_relative_world_graphdata.py
 ```
 - Convert to PyTorch Geometric format
 - Generate node and edge features
 - Create multiple graph configurations
+
+## Data Structure
+
+### Raw Vehicle Detection Data (json_data/)
+Raw vehicle detection results from video processing:
+
+```json
+{
+  "object_id": 11,
+  "bbox": [878, 211, 39, 15],
+  "position": [75.1442261, 4.8946166, -55.26317],
+  "class": 0,
+  "speed": 44.71412015639241,
+  "direction": [12.395780499999987, 0, 0.7846370000000036],
+  "acceleration": 62.102944661656124,
+  "frame": 2,
+  "category": "",
+  "neighbors_ids": [9, 82, 8, 95, 31, 108, 62],
+  "neighbors_distances": [9.51797110122735, 17.42144386082408, ...],
+  "neighbors_speeds": [31.162106502292207, 11.221498435015738, ...],
+  "neighbors_directions": [[8.630099999999956, 0, 0.6709290000000223], ...],
+  "neighbors_accelerations": [43.280703475405836, 15.585414493077414, ...],
+  "neighbors_world_positions": [[84.10864, 4.8946166, -52.0645676], ...],
+  "neighbors_bbox": [[801, 212, 42, 19], ...]
+}
+```
+
+**Key Fields:**
+- `object_id`: Unique vehicle identifier
+- `bbox`: Bounding box [x, y, width, height] in image coordinates
+- `position`: 3D world coordinates [x, y, z]
+- `speed`: Vehicle speed in km/h
+- `direction`: Movement direction vector
+- `acceleration`: Vehicle acceleration
+- `frame`: Video frame number
+- `neighbors_*`: Information about nearby vehicles
+
+### Processed Behavior Data (2_categorized_vehicle_data/)
+Enhanced data with behavior classifications and lane assignments:
+
+```json
+{
+  "object_id": 103,
+  "bbox": [588, 10, 17, 19],
+  "position": [127.450912, 4.8946166, -95.86969],
+  "class": 0,
+  "speed": 0,
+  "direction": [0, 0, 0],
+  "acceleration": 3.659789832320519,
+  "frame": 70,
+  "category": "stop",
+  "neighbors_ids": [234, 35, 70, 77, 234, 21, 35],
+  "neighbors_distances": [3.2357413573003653, 9.074350923291927, ...],
+  "neighbors_speeds": [0, 0, 5.838702133981688, ...],
+  "neighbors_directions": [[0, 0, 0], [0, 0, 0], ...],
+  "neighbors_accelerations": [0, 0, 0.13912568283737606, ...],
+  "neighbors_world_positions": [[124.4507, 4.8946166, -97.08161], ...],
+  "neighbors_bbox": [[610, 9, 17, 16], ...],
+  "lane_id": "17-2"
+}
+```
+
+**Additional Fields:**
+- `category`: Behavior classification ("stop", "lane_change", "normal_driving")
+- `lane_id`: Assigned lane identifier
 
 ## Dataset Statistics
 
@@ -236,7 +302,7 @@ The dataset includes:
 
 ### Changing Coordinate Systems
 - Use `5_convert_relative_image_graphdata.py` for image coordinates
-- Use `6_convert_relative_world_graphdata.py` for world coordinates
+- Use `5_convert_relative_world_graphdata.py` for world coordinates
 - Modify coordinate transformation functions as needed
 
 ## Citation
@@ -247,7 +313,7 @@ If you use this dataset in your research, please cite:
   title={Vehicle Driving Behavior Analysis Dataset},
   author={Your Name},
   year={2025},
-  url={https://github.com/your-repo/tii_graph_data}
+  url={https://github.com/youlkyeonglee/tii_graph_data}
 }
 ```
 
