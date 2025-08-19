@@ -22,8 +22,8 @@ Input Video → Vehicle Detection → Lane Assignment → Behavior Classificatio
 ## Download Links
 
 ### Dataset Files
-- [json_data (Google Drive)](https://drive.google.com/drive/folders/1F3xJZBhCIh1NUgzfxI0JdAk0mppb1Twk?usp=sharing) - 차량 검출 데이터
-- [video_data (Google Drive)](https://drive.google.com/drive/folders/1eNYsHGSMzCBMo162OBR4L1EE2EC8bsgE?usp=sharing) - 원본 비디오 데이터
+- [json_data (Google Drive)](https://drive.google.com/drive/folders/1F3xJZBhCIh1NUgzfxI0JdAk0mppb1Twk?usp=sharing) - Vehicle detection data
+- [video_data (Google Drive)](https://drive.google.com/drive/folders/1eNYsHGSMzCBMo162OBR4L1EE2EC8bsgE?usp=sharing) - Video data
 
 ## Folder Structure
 
