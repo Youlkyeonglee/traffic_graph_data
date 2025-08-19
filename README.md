@@ -22,8 +22,7 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 *Annotated video showing vehicle trajectories, behavior classifications, and lane information*
 
 **Video Files:**
-[![Video](lane_annotations_result.jpg)](https://youtu.be/ZOX_vPBZQx4)
-
+[![Video](https://img.youtube.com/vi/ZOX_vPBZQx4/0.jpg)](https://www.youtube.com/watch?v=ZOX_vPBZQx4)
 ### Processing Pipeline Overview
 ```
 Input Video → Vehicle Detection → Lane Assignment → Behavior Classification → Graph Data
