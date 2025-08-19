@@ -1,0 +1,19 @@
+[project]
+name = "tii-graph-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "opencv-python>=4.12.0.88",
+    "pandas",
+    "pillow",
+    "psutil",
+    "scipy",
+    "torch>=2.0.0",
+    "torch-geometric",
+    "torchvision>=0.15.0",
+    "tqdm",
+]

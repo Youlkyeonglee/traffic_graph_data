@@ -1,0 +1,13 @@
+__pycache__/
+*.py[oc]
+1_filtered_vehicle_data/
+2_categorized_vehicle_data/
+3_visualization_filtered_result/
+4_graph_data/
+4_world_graph_data/
+json_data/
+video_data/
+
+
+# Virtual environments
+.venv
