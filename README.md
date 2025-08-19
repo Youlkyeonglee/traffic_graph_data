@@ -12,6 +12,15 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 |:-----------------:|:-------------------------------:|
 | <img src="lane_annotations_result.jpg" width="400" height="300"> | <a href="https://www.youtube.com/watch?v=ZOX_vPBZQx4"><img src="https://img.youtube.com/vi/ZOX_vPBZQx4/0.jpg" width="400" height="300"></a> |
 |*Interactive lane annotation tool showing road lanes, centerlines, and exclusion zones*|*Annotated video showing vehicle trajectories, behavior classifications, and lane information*|
+
+## Ulsan Gongeoptap Digital Twin Project
+
+| Digital Twin Visualization |
+|:-------------------------:|
+| <a href="https://www.youtube.com/watch?v=ybO6N5v70Mc"><img src="https://img.youtube.com/vi/ybO6N5v70Mc/0.jpg" width="800" height="600"></a> |
+|Left: Real video clip / Right: Digital Twin|
+
+
 ### Processing Pipeline Overview
 ```
 Input Video → Vehicle Detection → Lane Assignment → Behavior Classification → Graph Data
