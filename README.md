@@ -15,14 +15,14 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 
 ### Vehicle Behavior Visualization
 <!-- [![Vehicle Behavior Visualization](https://youtu.be/ZOX_vPBZQx4)] -->
-<video width="500" height="300" controls>
-  <source src="https://youtu.be/ZOX_vPBZQx4" type="video/mp4">
+<!-- <video width="500" height="300" controls>
+  <source src="https://youtu.be/ZOX_vPBZQx4" type="video/">
   Your browser does not support the video tag.
-</video>
+</video> -->
 *Annotated video showing vehicle trajectories, behavior classifications, and lane information*
 
 **Video Files:**
-- [Lane Annotation Result](lane_annotations_result.jpg)
+[![Video](lane_annotations_result.jpg)](https://youtu.be/ZOX_vPBZQx4)
 
 ### Processing Pipeline Overview
 ```
