@@ -15,7 +15,7 @@ The dataset consists of processed video data with vehicle trajectories, lane inf
 
 ## Ulsan Gongeoptap Digital Twin Project
 
-<table>
+<table align="center">
 <tr>
   <td colspan="2" align="center">Digital Twin Visualization</td>
 </tr>
