@@ -267,16 +267,16 @@ Enhanced data with behavior classifications and lane assignments:
 
 | **Feature Type** | **Dimension** | **Attributes** |
 |:---|:---:|:---|
-| Node \(\mathcal{V}\) | 9 | cx, cy, w, h, speed, dx, dy, dz, acceleration |
-| Edge \(\mathcal{E}\) | 5 | cx, cy, w, h, speed |
-| Edge \(\mathcal{E}\) | 6 | cx, cy, w, h, speed, acceleration |
-| Edge \(\mathcal{E}\) | 7 | cx, cy, w, h, speed, acceleration, $\mathcal{D}$ |
-| Edge \(\mathcal{E}\) | 10 | cx, cy, w, h, speed, dx, dy, dz, acceleration, $\mathcal{D}$ |
-| Node \(\mathcal{V}\) | 8 | wx, wy, wz, speed, dx, dy, dz, acceleration |
-| Edge \(\mathcal{E}\) | 4 | wx, wy, wz, speed |
-| Edge \(\mathcal{E}\) | 5 | wx, wy, wz, speed, acceleration |
-| Edge \(\mathcal{E}\) | 6 | wx, wy, wz, speed, acceleration, $\mathcal{D}$ |
-| Edge \(\mathcal{E}\) | 9 | wx, wy, wz, speed, dx, dy, dz, acceleration, $\mathcal{D}$ |
+| Node $\(\mathcal{V}\)$ | 9 | cx, cy, w, h, speed, dx, dy, dz, acceleration |
+| Edge $\(\mathcal{E}\)$ | 5 | cx, cy, w, h, speed |
+| Edge $\(\mathcal{E}\)$ | 6 | cx, cy, w, h, speed, acceleration |
+| Edge $\(\mathcal{E}\)$ | 7 | cx, cy, w, h, speed, acceleration, $\mathcal{D}$ |
+| Edge $\(\mathcal{E}\)$ | 10 | cx, cy, w, h, speed, dx, dy, dz, acceleration, $\mathcal{D}$ |
+| Node $\(\mathcal{V}\)$ | 8 | wx, wy, wz, speed, dx, dy, dz, acceleration |
+| Edge $\(\mathcal{E}\)$ | 4 | wx, wy, wz, speed |
+| Edge $\(\mathcal{E}\)$ | 5 | wx, wy, wz, speed, acceleration |
+| Edge $\(\mathcal{E}\)$ | 6 | wx, wy, wz, speed, acceleration, $\mathcal{D}$ |
+| Edge $\(\mathcal{E}\)$ | 9 | wx, wy, wz, speed, dx, dy, dz, acceleration, $\mathcal{D}$ |
 
 #### Image Coordinates Graph Data (4_graph_data/)
 PyTorch Geometric graph data using image coordinates:
