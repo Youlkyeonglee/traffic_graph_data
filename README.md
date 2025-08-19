@@ -228,7 +228,7 @@ Raw vehicle detection results from video processing:
 
 **Key Fields:**
 - `object_id`: Unique vehicle identifier
-- `bbox`: Bounding box [x, y, width, height] in image coordinates
+- `bbox`: Bounding box [center_x, center_y, width, height] in image coordinates
 - `position`: 3D world coordinates [x, y, z]
 - `speed`: Vehicle speed in km/h
 - `direction`: Movement direction vector
